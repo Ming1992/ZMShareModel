@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DEB50C7E-F6CC-4D05-A788-A2E0FE37C13E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZMShareModel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3C81B8A1A0483763547F24E275DAD1E039944DDB</key>
+		<string>https://github.com/Ming1992/ZMShareModel.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZMShareModel.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3C81B8A1A0483763547F24E275DAD1E039944DDB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Ming1992/ZMShareModel.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3C81B8A1A0483763547F24E275DAD1E039944DDB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3C81B8A1A0483763547F24E275DAD1E039944DDB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZMShareModel</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,12 @@
+1、新浪微博 - libWeiboSDK_3.1.1
+    1）Target->Buid Settings->Linking 下的 Other Linker Flags  项添加-ObjC。
+    2）需要添加的Frameworks：QuartzCore.framework 、ImageIO.framework 、SystemConfiguration.framework 、Security.framework、CoreTelephony.framework 、 CoreText.framework 、 UIKit.framework 、 Foundation.framework 和 CoreGraphics.framework。
+    3) 新的scheme = wb + appid。
+
+2、微信 - WeChatSDK_1.5
+    1）SystemConfiguration.framework 、libz.dylib 、libsqlite3.0.dylib
+    新的scheme = wx + appid。
+
+3、腾讯 - tencent
+ 1）”Security.framework”、“libiconv.dylib”、“SystemConfiguration.framework”、“CoreGraphics.Framework”、“libsqlite3.dylib”、“CoreTelephony.framework”、“libstdc++.dylib”、“libz.dylib”
+    2）新的scheme = tencent + appid。
