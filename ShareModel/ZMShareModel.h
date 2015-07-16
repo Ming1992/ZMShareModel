@@ -23,6 +23,7 @@ typedef NS_ENUM(NSUInteger, ZMShareModelType) {
     ZMShareModelType_WXTimeline,            /**< 微信朋友圈    */
     ZMShareModelType_WXFavorite,            /**< 微信收藏    */
     ZMShareModelType_Tencent,               /**< QQ好友    */
+    ZMShareModelType_QZone,                 /**< QQ空间    */
 };
 
 @interface ZMShareModel : NSObject

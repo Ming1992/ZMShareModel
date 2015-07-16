@@ -17,6 +17,7 @@ static NSString* ZMShareModelItemWeiXinFriends = @"ZMShareModelItemWeiXinFriends
 static NSString* ZMShareModelItemWeiXinMessage = @"ZMShareModelItemWeiXinMessage";
 static NSString* ZMShareModelItemWeiXinFavorite = @"ZMShareModelItemWeiXinFavorite";
 static NSString* ZMShareModelItemTencent = @"com.tencent.mqq";
+static NSString* ZMShareModelItemQZone = @"com.tencent.QZone";
 
 #pragma mark -
 #pragma mark - ZMShareModel methods
@@ -163,9 +164,30 @@ static NSString* ZMShareModelItemTencent = @"com.tencent.mqq";
             }
         }
         
-        QQApiSendResultCode sent = [QQApiInterface sendReq: reqquest];
+        [QQApiInterface sendReq: reqquest];
         
-        NSLog(@"sent = %@", @(sent));
+        return;
+    }
+    if ([_shareItemType isEqualToString: ZMShareModelItemQZone]) {
+        
+        //腾讯
+        SendMessageToQQReq* reqquest = nil;
+        
+        if (_imageFilePath.length) {
+            
+            if ([_imageFilePath hasPrefix: @"http://"] || [_imageFilePath hasPrefix: @"https://"]) {
+                QQApiNewsObject* img = [QQApiNewsObject objectWithURL: [NSURL URLWithString: _webURL] title: _contentTitle description: _contentDescription previewImageURL: [NSURL URLWithString: _imageFilePath]];
+                
+                reqquest = [SendMessageToQQReq reqWithContent: img];
+            }
+            else {
+                QQApiNewsObject* img = [QQApiNewsObject objectWithURL: [NSURL URLWithString: _webURL] title: _contentTitle description: _contentDescription previewImageData: _imageData];
+                
+                reqquest = [SendMessageToQQReq reqWithContent: img];
+            }
+        }
+        
+        [QQApiInterface SendReqToQZone: reqquest];
         
         return;
     }
@@ -302,6 +324,14 @@ static NSString* ZMShareModelItemTencent = @"com.tencent.mqq";
             qqItem.itemName = @"QQ";
             
             [_itemArray addObject: qqItem];
+            
+            ZMShareItem* QZoneItem = [ZMShareItem new];
+            QZoneItem.identifier = ZMShareModelItemQZone;
+            QZoneItem.appkey = [appkey copy];
+            QZoneItem.itemIcon = @"sns_icon_6";
+            QZoneItem.itemName = @"QQ空间";
+            
+            [_itemArray addObject: QZoneItem];
         }
     }
 }

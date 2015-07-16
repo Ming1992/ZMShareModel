@@ -15,6 +15,7 @@
 		B3A7E7E91B3D508400BD7BFE /* sns_icon_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A7E7E41B3D508400BD7BFE /* sns_icon_3@2x.png */; };
 		B3A7E7EA1B3D508400BD7BFE /* sns_icon_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A7E7E51B3D508400BD7BFE /* sns_icon_5@2x.png */; };
 		B3A7E7EB1B3D508400BD7BFE /* sns_icon_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A7E7E61B3D508400BD7BFE /* sns_icon_4@2x.png */; };
+		B3BF270E1B574D5E00A50F9C /* sns_icon_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BF270D1B574D5E00A50F9C /* sns_icon_6@2x.png */; };
 		B3E2289C1B33AD5D00F4B482 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E2289B1B33AD5D00F4B482 /* main.m */; };
 		B3E2289F1B33AD5D00F4B482 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E2289E1B33AD5D00F4B482 /* AppDelegate.m */; };
 		B3E228A21B33AD5D00F4B482 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E228A11B33AD5D00F4B482 /* ViewController.m */; };
@@ -64,6 +65,7 @@
 		B3A7E7E41B3D508400BD7BFE /* sns_icon_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sns_icon_3@2x.png"; sourceTree = "<group>"; };
 		B3A7E7E51B3D508400BD7BFE /* sns_icon_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sns_icon_5@2x.png"; sourceTree = "<group>"; };
 		B3A7E7E61B3D508400BD7BFE /* sns_icon_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sns_icon_4@2x.png"; sourceTree = "<group>"; };
+		B3BF270D1B574D5E00A50F9C /* sns_icon_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sns_icon_6@2x.png"; sourceTree = "<group>"; };
 		B3E228961B33AD5D00F4B482 /* ZMShareModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMShareModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E2289A1B33AD5D00F4B482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E2289B1B33AD5D00F4B482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		B3A7E7E11B3D508400BD7BFE /* ShareItemIcons */ = {
 			isa = PBXGroup;
 			children = (
+				B3BF270D1B574D5E00A50F9C /* sns_icon_6@2x.png */,
 				B3A7E7E21B3D508400BD7BFE /* sns_icon_1@2x.png */,
 				B3A7E7E31B3D508400BD7BFE /* sns_icon_2@2x.png */,
 				B3A7E7E41B3D508400BD7BFE /* sns_icon_3@2x.png */,
@@ -372,6 +375,7 @@
 				B3E228CF1B33AF2F00F4B482 /* reamMe.txt in Resources */,
 				B3E228A51B33AD5D00F4B482 /* Main.storyboard in Resources */,
 				B3A7E7E71B3D508400BD7BFE /* sns_icon_1@2x.png in Resources */,
+				B3BF270E1B574D5E00A50F9C /* sns_icon_6@2x.png in Resources */,
 				B3E228AA1B33AD5D00F4B482 /* LaunchScreen.xib in Resources */,
 				B3FCFFFA1B4670C300BB0C3B /* test.png in Resources */,
 				B3E228A71B33AD5D00F4B482 /* Images.xcassets in Resources */,
