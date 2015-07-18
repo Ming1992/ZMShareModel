@@ -345,7 +345,12 @@ static NSString* ZMShareModelItemQZone = @"com.tencent.QZone";
     _webURL = webURL;
     
     if (imagePath.length) {
-        _imageData = [NSData dataWithContentsOfFile: imagePath];
+        if ([imagePath hasPrefix: @"http://"] || [imagePath hasPrefix: @"https://"]) {
+            _imageData = [NSData dataWithContentsOfURL: [NSURL URLWithString: imagePath]];
+        }
+        else {
+            _imageData = [NSData dataWithContentsOfFile: imagePath];
+        }
         _imageFilePath = imagePath;
     }
     

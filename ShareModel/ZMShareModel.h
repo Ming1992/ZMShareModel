@@ -43,6 +43,7 @@ typedef NS_ENUM(NSUInteger, ZMShareModelType) {
 - (void)connectTencentWithAppKey:(NSString*)appkey appSecret:(NSString*)appsecret;
 
 
+
 /** 分享内容 */
 - (void)shareContentWithTitle:(NSString*)title description:(NSString*)description image:(NSString*)imagePath webURL:(NSString*)webURL;
 

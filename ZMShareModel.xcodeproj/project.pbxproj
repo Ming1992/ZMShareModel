@@ -146,12 +146,12 @@
 		B3A7E7E11B3D508400BD7BFE /* ShareItemIcons */ = {
 			isa = PBXGroup;
 			children = (
-				B3BF270D1B574D5E00A50F9C /* sns_icon_6@2x.png */,
 				B3A7E7E21B3D508400BD7BFE /* sns_icon_1@2x.png */,
 				B3A7E7E31B3D508400BD7BFE /* sns_icon_2@2x.png */,
 				B3A7E7E41B3D508400BD7BFE /* sns_icon_3@2x.png */,
 				B3A7E7E61B3D508400BD7BFE /* sns_icon_4@2x.png */,
 				B3A7E7E51B3D508400BD7BFE /* sns_icon_5@2x.png */,
+				B3BF270D1B574D5E00A50F9C /* sns_icon_6@2x.png */,
 			);
 			path = ShareItemIcons;
 			sourceTree = "<group>";
