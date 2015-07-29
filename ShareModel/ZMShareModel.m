@@ -197,7 +197,7 @@ static NSString* ZMShareModelItemQZone = @"com.tencent.QZone";
         message.title = _contentTitle;
         message.description = _contentDescription;
         
-        if (_imageData) {
+        if (_imageData && _imageData.length < 32 * 1024) {
             [message setThumbImage:[UIImage imageWithData: _imageData]];
         }
         
@@ -285,7 +285,7 @@ static NSString* ZMShareModelItemQZone = @"com.tencent.QZone";
                 messageItem.appsecret = [appsecret copy];
                 messageItem.redirectURI = nil;
                 messageItem.itemIcon = @"sns_icon_3";
-                messageItem.itemName = @"朋友圈";
+                messageItem.itemName = @"微信朋友圈";
                 
                 [_itemArray addObject: messageItem];
                 
@@ -321,7 +321,7 @@ static NSString* ZMShareModelItemQZone = @"com.tencent.QZone";
             qqItem.identifier = ZMShareModelItemTencent;
             qqItem.appkey = [appkey copy];
             qqItem.itemIcon = @"sns_icon_5";
-            qqItem.itemName = @"QQ";
+            qqItem.itemName = @"QQ好友";
             
             [_itemArray addObject: qqItem];
             
@@ -345,12 +345,16 @@ static NSString* ZMShareModelItemQZone = @"com.tencent.QZone";
     _webURL = webURL;
     
     if (imagePath.length) {
-        if ([imagePath hasPrefix: @"http://"] || [imagePath hasPrefix: @"https://"]) {
-            _imageData = [NSData dataWithContentsOfURL: [NSURL URLWithString: imagePath]];
-        }
-        else {
-            _imageData = [NSData dataWithContentsOfFile: imagePath];
-        }
+        
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            if ([imagePath hasPrefix: @"http://"] || [imagePath hasPrefix: @"https://"]) {
+                _imageData = [NSData dataWithContentsOfURL: [NSURL URLWithString: imagePath]];
+            }
+            else {
+                _imageData = [NSData dataWithContentsOfFile: imagePath];
+            }
+        });
+        
         _imageFilePath = imagePath;
     }
     
