@@ -135,7 +135,7 @@
         UIImage* image = [UIImage imageNamed: shareItem.itemIcon];
         NSString* name = shareItem.itemName;
         
-        itemButton.titleLabel.font = [UIFont systemFontOfSize: 14];
+        itemButton.titleLabel.font = [UIFont systemFontOfSize: 12];
         [itemButton setImage: image forState: UIControlStateNormal];
         [itemButton setImageEdgeInsets: UIEdgeInsetsMake(-20, 1, 0, 0)];
         [itemButton setTitle: name forState: UIControlStateNormal];
